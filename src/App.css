@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color:#1d1d1d;
+    --secondary-color: #f7f7f7;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(/images/picture8.png) no-repeat fixed bottom / cover;
+}
+
+.nav-bar{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.nav-bar .logo a{
+  color: var(--secondary-color);
+}
+
+.nav-bar form{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid rgba(155, 155, 155, 0.2);
+}
+
+.nav-bar form button{
+  background-color: var(--secondary-color);
+}
+/* End of Navbar */
+
+/* Start Movie item */
+.movie-item {
+    height: 450px;
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+
+@media screen and (max-width: 767px) {
+    .movie-item{
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .movie-item{
+        height: 340px;
+    }
+}
+
+.overview{
+    background-color: var(--secondary-color);
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+
+.movie-info span{
+    background-color: var(--primary-color);
+}
+
+.movie-info .green{
+    color:lightgreen;
+}
+
+.movie-info .orange{
+    color:orange;
+}
+
+.movie-info .red{
+    color:red;
+}
+
+.movie-item:hover .overview{
+    transform: translateY(0);
+    overflow-y: scroll;
+}
+
+.overview{
+    background-color: var(--secondary-color);
+}
+/* End Movie item */
+
+/* Start footer */
+footer{
+    background-color: #1e1e1e;
+}
+/* End footer */
